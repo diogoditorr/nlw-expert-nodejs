@@ -1,0 +1,17 @@
+meta {
+  name: Create poll
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/polls
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Testando a enquete"
+  }
+}
