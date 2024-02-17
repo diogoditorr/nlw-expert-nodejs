@@ -1,0 +1,17 @@
+meta {
+  name: Vote on poll
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/polls/22e8513c-b079-40b0-ae1c-89e6e47fdef2/votes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pollOptionId": "6f5f45c4-e190-414d-919f-faaee3e2d451"
+  }
+}
