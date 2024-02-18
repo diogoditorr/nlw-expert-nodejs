@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unused-vars
-const eslint = import("eslint");
+const eslint = require("eslint");
 
 /** @type {eslint.Linter.Config} */
 module.exports = {
@@ -20,5 +20,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint"],
-  rules: {},
+  rules: {
+    "@typescript-eslint/no-unused-vars": "warn",
+  },
 };
